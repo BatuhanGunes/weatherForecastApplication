@@ -1,17 +1,97 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "İletişim";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!DOCTYPE html>
+    <html lang="en">
+        
+        <head>
+            
+        </head>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        <body>
+
+            <div class="site-content">
+
+                <div class="site-header">
+                    <div class="container">
+                        <a href="~/Home/Index" class="branding">
+                            <img src="~/images/logo.png" alt="" class="logo">
+                            <div class="logo-type">
+                                <h1 class="site-title">HAVA DURUMU TAHMİN UYGULAMASI</h1>
+                                <small class="site-description">Kütahya Dumlupınar Üniversitesi</small>
+                            </div>
+                        </a>
+
+                        <!-- Default snippet for navigation -->
+                        <div class="main-navigation">
+                            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                            <ul class="menu">
+                                <li class="menu-item">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("Hakkımızda", "About", "Home")</li>
+                                <li class="menu-item current-menu-item">@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                            </ul> <!-- .menu -->
+                        </div> <!-- .main-navigation -->
+
+                        <div class="mobile-navigation"></div>
+
+                    </div>
+                </div> <!-- .site-header -->
+
+                <main class="main-content">
+
+                    <div class="fullwidth-block">
+                        <div class="container">
+                            <div class="col-md-5">
+                                <div class="contact-details">
+                                    
+                                    
+                                    <div class="contact-info">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.533365437823!2d29.89721065303703!3d39.480685842586766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c9486d6b77991d%3A0xa51a8d9c8451df0e!2sDumlup%C4%B1nar+University+Faculty+of+Engineering!5e0!3m2!1sen!2str!4v1557144300754!5m2!1sen!2str" style="border:0"></iframe>
+
+                                        <br /><br />
+
+                                        <address>
+                                            <img src="~/images/icon-marker.png" alt="">
+                                            <p>
+                                                Kütahya Dumlupınar Üniversitesi <br>
+                                                Evliya Çelebi Yerleşkesi Tavşanlı Yolu 10.km Kütahya / Türkiye, 43000 merkez/Kütahya
+                                            </p>
+                                        </address>
+
+                                        <a href="#"><img src="~/images/icon-phone.png" alt="">+90 123 45 67</a>
+                                        <a href="#"><img src="~/images/icon-envelope.png" alt="">bilgi@dpu.edu.tr</a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 col-md-offset-1">
+                                <h2 class="section-title">İletişim Formu</h2>
+                                <form action="#" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6"><input type="text" placeholder="İsminiz..."></div>
+                                        <div class="col-md-6"><input type="text" placeholder="Email Adresi..."></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6"><input type="text" placeholder="Şirket İsmi..."></div>
+                                        <div class="col-md-6"><input type="text" placeholder="Website..."></div>
+                                    </div>
+                                    <textarea name="" placeholder="Mesajınız..."></textarea>
+                                    <div class="text-right">
+                                        <input type="submit" placeholder="Send message">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </main> <!-- .main-content -->
+            </div>
+
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/app.js"></script>
+
+        </body>
+    </html>
