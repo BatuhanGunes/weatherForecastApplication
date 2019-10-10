@@ -1,31 +1,145 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+    <html lang="en">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+        <head>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+        </head>
+
+        <body>
+
+            <div class="site-content">
+                <div class="site-header">
+                    <div class="container">
+                        <a href="~/Home/Index" class="branding">
+                            <img src="~/images/logo.png" alt="" class="logo">
+                            <div class="logo-type">
+                                <h1 class="site-title">HAVA DURUMU TAHMİN UYGULAMASI</h1>
+                                <small class="site-description">Kütahya Dumlupınar Üniversitesi</small>
+                            </div>
+                        </a>
+
+                        <!-- Default snippet for navigation -->
+                        <div class="main-navigation">
+                            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                            <ul class="menu">
+                                <li class="menu-item current-menu-item">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("Hakkımızda", "About", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                            </ul> <!-- .menu -->
+                        </div> <!-- .main-navigation -->
+
+                        <div class="mobile-navigation"></div>
+
+                    </div>
+                </div> <!-- .site-header -->
+
+                <div class="hero">
+                    <div class="container">
+                        <h1 class="site-title">KÜTAHYA ŞEHRİ İÇİN HAVA DURUMU TAHMİNİ</h1>
+                    </div>
+                </div>
+
+                <div class="forecast-table">
+                    <div class="container">
+                        <div class="forecast-container">
+                            <div class="today forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Monday</div>
+                                    <div class="date">6 Oct</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="location">Kütahya / Türkiye</div>
+                                    <div class="degree">
+                                        <div class="num">23<sup>o</sup>C</div>
+                                        <div class="forecast-icon">
+                                            <img src="~/images/icons/icon-1.svg" alt="" width=90>
+                                        </div>
+                                    </div>
+                                    <span><img src="~/images/icon-umberella.png" alt="">20%</span>
+                                    <span><img src="~/images/icon-wind.png" alt="">18km/h</span>
+                                    <span><img src="~/images/icon-compass.png" alt="">Doğu</span>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Tuesday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-3.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Wednesday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-5.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Thursday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-7.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Friday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-12.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Saturday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-13.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">Sunday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src="~/images/icons/icon-14.svg" alt="" width=48>
+                                    </div>
+                                    <div class="degree">23<sup>o</sup>C</div>
+                                    <small>18<sup>o</sup></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/app.js"></script>
+
+        </body>
+    </html>
