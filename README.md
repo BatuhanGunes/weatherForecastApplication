@@ -1,5 +1,5 @@
 # weatherForecastApplication
-weather forecast application with Asp.net Mvc c#
+weather forecast application with Asp.Net MVC c#
 
 ### Screenshots
 
