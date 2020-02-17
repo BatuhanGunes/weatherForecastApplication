@@ -58,7 +58,7 @@ Meteoroloji Genel Müdürlüğü’nden alınan veriler birbirinden bağımsız 
 
 ![Screenshot DataBase1](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database0.png)
 
-![Screenshot DataBase2](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database1.png)
+![Screenshot DataBase2](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database.png)
 
 ![Screenshot DataBase3](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database2.png)
 
