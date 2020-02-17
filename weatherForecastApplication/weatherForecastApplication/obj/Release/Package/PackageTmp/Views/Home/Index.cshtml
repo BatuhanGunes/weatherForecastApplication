@@ -1,0 +1,167 @@
+﻿@{
+    ViewBag.Title = "Anasayfa";
+}
+
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+
+        </head>
+
+        <body>
+
+            <div class="site-content">
+                <div class="site-header">
+                    <div class="container">
+                        <a href="~/Home/Index" class="branding">
+                            <img src="~/images/logo.png" alt="" class="logo">
+                            <div class="logo-type">
+                                <h1 class="site-title">HAVA DURUMU TAHMİN UYGULAMASI</h1>
+                                <small class="site-description">Kütahya Dumlupınar Üniversitesi</small>
+                            </div>
+                        </a>
+
+                        <!-- Default snippet for navigation -->
+                        <div class="main-navigation">
+                            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                            <ul class="menu">
+                                <li class="menu-item current-menu-item">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("Hakkımızda", "About", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                            </ul> <!-- .menu -->
+                        </div> <!-- .main-navigation -->
+
+                        <div class="mobile-navigation"></div>
+
+                    </div>
+                </div> <!-- .site-header -->
+
+                <div class="hero">
+                    <div class="container">
+                        <h1 class="site-title">KÜTAHYA ŞEHRİ İÇİN HAVA DURUMU TAHMİNİ</h1>
+                    </div>
+                </div>
+
+                <div class="forecast-table">
+                    <div class="container">
+                        <div class="forecast-container">
+                            <div class="today forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi1"] (Bugün)</div>
+                                    <div class="date">@TempData["Tarih"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="location">Kütahya / Türkiye</div>
+                                    <div class="degree">
+                                        <div class="num">@TempData["predictionTemp1"]<sup>o</sup>C</div>
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol1"] alt="" width=90>
+                                        </div>
+                                    </div>
+                                    <span><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain1"]</span>
+                                    <span><img src="~/images/icon-compass.png" alt="">Basınç: @TempData["predictionPressure"] hPa</span>
+                                    <span><img src="~/images/icon-humidity.png" alt="">Nem: %@TempData["predictionHumidity1"]</span>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi2"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol2"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp2"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain2"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity2"]</span></sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi3"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol3"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp3"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain3"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity3"]</span></sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi4"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol4"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp4"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain4"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity4"]</span></sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi5"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol5"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp5"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain5"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity5"]</span></sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi6"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol6"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp6"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain6"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity6"]</span></sup></small>
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <div class="forecast-header">
+                                    <div class="day">@TempData["gunAdi7"]</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content">
+                                    <div class="forecast-icon">
+                                        <img src=@TempData["predictionSymbol7"] alt="" width=48>
+                                    </div>
+                                    <div class="degree">@TempData["predictionTemp7"]<sup>o</sup>C</div>
+                                    <br />
+                                    <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain7"]</sup></small>
+                                    <br />
+                                    <small><sup><span><img src="~/images/icon-humidity.png" alt="">%@TempData["predictionHumidity7"]</span></sup></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/jquery-1.11.1.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/app.js"></script>
+
+        </body>
+    </html>

@@ -205,6 +205,7 @@
     <Content Include="sass\libs\_settings.scss" />
     <Content Include="sass\style.scss" />
     <Content Include="images\icons\icon-7.ai" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

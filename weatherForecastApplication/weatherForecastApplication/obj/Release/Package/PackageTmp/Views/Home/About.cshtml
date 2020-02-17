@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Hakkımızda";
+}
+
+<!DOCTYPE html>
+    <html lang="en">
+        
+        <head>
+
+        </head>
+
+        <body>
+            <div class="site-content">
+
+                <div class="site-header">
+                    <div class="container">
+                        <a href="~/Home/Index" class="branding">
+                            <img src="~/images/logo.png" alt="" class="logo">
+                            <div class="logo-type">
+                                <h1 class="site-title">HAVA DURUMU TAHMİN UYGULAMASI</h1>
+                                <small class="site-description">Kütahya Dumlupınar Üniversitesi</small>
+                            </div>
+                        </a>
+
+                        <!-- Default snippet for navigation -->
+                        <div class="main-navigation">
+                            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                            <ul class="menu">
+                                <li class="menu-item">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
+                                <li class="menu-item current-menu-item">@Html.ActionLink("Hakkımızda", "About", "Home")</li>
+                                <li class="menu-item">@Html.ActionLink("İletişim", "Contact", "Home")</li>
+                            </ul> <!-- .menu -->
+                        </div> <!-- .main-navigation -->
+
+                        <div class="mobile-navigation"></div>
+
+                    </div>
+                </div> <!-- .site-header -->
+
+                <main class="main-content">
+                    <div class="fullwidth-block">
+                        <div class="container">
+                            <div><h1 class="section-title">Takımımız : </h1></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="photo">
+
+                                        <img src="~/images/Batuhan.jpg" alt="" class="photo-preview photo-detail">
+                                        <div class="photo-details">
+                                            <h2 class="photo-title"><a href="#">Batuhan Güneş</a></h2>
+                                            <h4>Projedeki Görevleri :</h4>
+                                            <p>Background, Asp.net MVC ve Unit testler</p>
+                                        </div>
+                                    </div>
+                                    <div class="photo">
+                                        <img src="~/images/ResimYok.png" alt="" class="photo-preview photo-detail">
+                                        <div class="photo-details">
+                                            <h2 class="photo-title"><a href="#">Emre Okan Dışkaya</a></h2>
+                                            <h4>Projedeki Görevleri :</h4>
+                                            <p>Server bağlantıları, Microsof Server, apache ve Unit testler</p>
+                                        </div>
+                                    </div>
+                                    <div class="photo">
+                                        <img src="~/images/Berkay.jpg" alt="" class="photo-preview photo-detail">
+                                        <div class="photo-details">
+                                            <h2 class="photo-title"><a href="#">Muhammed Emin Berkay Kocaoğlu</a></h2>
+                                            <h4>Projedeki Görevleri :</h4>
+                                            <p>Veri tabanı sorguları (Mssql ve LinQ) ve Unit testler </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="photo">
+                                        <img src="~/images/Dursun.jpg" alt="" class="photo-preview photo-detail">
+                                        <div class="photo-details">
+                                            <h2 class="photo-title"><a href="#">Dursun Durak</a></h2>
+                                            <h4>Projedeki Görevleri :</h4>
+                                            <p>Veri tabanı (MSSQL), Dökümantasyon ve Unit testler</p>
+                                        </div>
+                                    </div>
+                                    <div class="photo">
+                                        <img src="~/images/Tutku.jpg" alt="" class="photo-preview photo-detail">
+                                        <div class="photo-details">
+                                            <h2 class="photo-title"><a href="#">Tutku Argun</a></h2>
+                                            <h4>Projedeki Görevleri :</h4>
+                                            <p>Foreground, Bootstrap, Dökümantasyon ve Unit testler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main> <!-- .main-content -->
+            </div>
+        </body>
+        </html>

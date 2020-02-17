@@ -48,99 +48,117 @@
                         <div class="forecast-container">
                             <div class="today forecast">
                                 <div class="forecast-header">
-                                    <div class="day">Monday</div>
-                                    <div class="date">6 Oct</div>
+                                    <div class="day">@TempData["gunAdi1"] (Bugün)</div>
+                                    <div class="date">@TempData["Tarih"]</div>
                                 </div> <!-- .forecast-header -->
                                 <div class="forecast-content">
                                     <div class="location">Kütahya / Türkiye</div>
                                     <div class="degree">
-                                        <div class="num">23<sup>o</sup>C</div>
+                                        <div class="num">@TempData["predictionTemp1"]<sup>o</sup>C</div>
                                         <div class="forecast-icon">
-                                            <img src="~/images/icons/icon-1.svg" alt="" width=90>
+                                            <img src=@TempData["predictionSymbol1"] alt="" width=90>
                                         </div>
                                     </div>
-                                    <span><img src="~/images/icon-umberella.png" alt="">20%</span>
-                                    <span><img src="~/images/icon-wind.png" alt="">18km/h</span>
-                                    <span><img src="~/images/icon-compass.png" alt="">Doğu</span>
+                                    <span><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain1"]</span>
+                                    <span><img src="~/images/icon-compass.png" alt="">Basınç: @TempData["predictionPressure"] hPa</span>
+                                    <span><img src="~/images/icon-humidity2.png" alt="">Nem: %@TempData["predictionHumidity1"]</span>
                                 </div>
                             </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Tuesday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-3.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi2"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol2"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp2"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain2"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity2"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
-                            </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Wednesday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-5.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi3"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol3"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp3"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain3"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity3"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
-                            </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Thursday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-7.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi4"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol4"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp4"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain4"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity4"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
-                            </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Friday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-12.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi5"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol5"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp5"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain5"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity5"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
-                            </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Saturday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-13.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi6"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol6"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp6"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain6"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity6"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
-                            </div>
-                            <div class="forecast">
-                                <div class="forecast-header">
-                                    <div class="day">Sunday</div>
-                                </div> <!-- .forecast-header -->
-                                <div class="forecast-content">
-                                    <div class="forecast-icon">
-                                        <img src="~/images/icons/icon-14.svg" alt="" width=48>
+                                <div class="forecast">
+                                    <div class="forecast-header">
+                                        <div class="day">@TempData["gunAdi7"]</div>
+                                    </div> <!-- .forecast-header -->
+                                    <div class="forecast-content">
+                                        <div class="forecast-icon">
+                                            <img src=@TempData["predictionSymbol7"] alt="" width=48>
+                                        </div>
+                                        <div class="degree">@TempData["predictionTemp7"]<sup>o</sup>C</div>
+                                        <br />
+                                        <small><sup><img src="~/images/icon-umberella.png" alt="">%@TempData["predictionRain7"]</sup></small>
+                                        <br />
+                                        <small><sup><span><img src="~/images/icon-humidity2.png" alt="">%@TempData["predictionHumidity7"]</span></sup></small>
                                     </div>
-                                    <div class="degree">23<sup>o</sup>C</div>
-                                    <small>18<sup>o</sup></small>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
-
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <script src="js/jquery-1.11.1.min.js"></script>
             <script src="js/plugins.js"></script>
             <script src="js/app.js"></script>
