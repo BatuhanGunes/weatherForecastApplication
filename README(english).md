@@ -2,6 +2,7 @@
 
 weather forecast application with Asp.Net MVC c #
 
+[Turkish](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/README.md) / English
  
 
 #### NOTE: The Project in the Republic of Turkey General Directorate of Meteorology data obtained from institutions for legal reasons because the actual data is not shared database file. The database model is shown as a screenshot in the continuation of this article.
