@@ -1,7 +1,7 @@
 # weatherForecastApplication
 weather forecast application with Asp.Net MVC c#
 
-Turkish / [English](https://github.com/BatuhanGunes/weatherForecastApplication/edit/master/README(english).md)
+Turkish / [English](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/README(english).md)
 
 #### NOT: Proje içerisindeki veriler Türkiye Cumhuriyeti Meteoroloji Genel Müdürlüğü kurumundan elde edilmiş gerçek veriler olduğundan yasal nedenlerden dolayı veri tabanı dosyası paylaşılmamıştır. Veri tabanı modeli bu yazının devamında ekran görüntüsü olarak gösterilmektedir.
 
