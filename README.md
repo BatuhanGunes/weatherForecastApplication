@@ -1,62 +1,54 @@
+Language : [Turkish](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/README(Turkish).md) / English
+
 # weatherForecastApplication
-weather forecast application with Asp.Net MVC c#
 
-Turkish / [English](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/README(english).md)
+### SUMMARY
 
-#### NOT: Proje içerisindeki veriler Türkiye Cumhuriyeti Meteoroloji Genel Müdürlüğü kurumundan elde edilmiş gerçek veriler olduğundan yasal nedenlerden dolayı veri tabanı dosyası paylaşılmamıştır. Veri tabanı modeli bu yazının devamında ekran görüntüsü olarak gösterilmektedir.
+Weather forecasting is at the heart of meteorology, many young people engaged in this work try to accurately predict and explain the weather events affecting the life of millions of people. Weather forecasts affect many people and many countries.Therefore, the subject of weather forecasting in our project is carried out through the database and algorithms and the internet server. Weather forecast with some algorithms using database and historical data has been realized in the project.
 
-### ÖZET
+Keywords: weather, forecast, database, algorithm, web, server.
 
-Hava tahmini meteorolojinin kalbinde yer alır, bu işle yoğrulan birçok genç insan, milyonlarca insanın yaşamı etkileyen hava olaylarını doğru tahmin etmeye ve açıklamaya çalışırlar. Hava tahminleri birçok insanı ve birçok ülkeyi etkiler.Bu sebeple projemizde hava durumu tahmini konusunu veri tabanı ve algoritmalar ile internet sunucusu üzerinden gerçekleştirilmektedir. Veri tabanı ile geçmiş verileri kullanarak birtakım algoritmalarla hava durumu tahmini projede gerçekleştirilmiştir.
+Project creation date: November 2019
 
-Anahtar Kelimeler: hava durumu, tahmin, veri tabanı, algoritma, web, sunucu.
+### LOGIN
 
-### GİRİŞ
+The weather forecast; Forecasting studies using subjective or objective methods based on observations and analysis of meteorological events that can be seen within a time period in a particular country, region or center are called weather forecasting.
 
-Hava Tahmini; Belirli bir ülke, bölge veya merkezde, bir zaman dilimi içinde görülebilecek meteorolojik olayların gözlem ve analizlere dayanılarak sübjektif veya objektif yöntemler kullanılarak önceden öngörülme çalışmaları hava tahmini olarak adlandırılır.
-Hava Tahmini Üç Aşamalıdır:
+The Weather Forecast has Three Stages:
+- Observations             
+- Analysis             
+- Guess             
 
--	Gözlemler
--	Analiz
--	Tahmin
+In this project, the results of the analysis and prediction were obtained. Observation data was taken from the systems prepared by the General Directorate of Meteorology. Because the observation step is done with physical materials, it would be more logical to take it ready for the project. In the data we received from the General Directorate of Meteorology, average weather values ​​were taken daily from stations located in 5 districts of Kütahya between 01.01.2018 and 01.01.2019. These districts are Kütahya (Center), Emet, Simav, Gediz and Altıntaş respectively. Average temperature, average current pressure and average humidity values ​​were taken from these stations daily.White and blue shades are used on the website.
 
-Bu projede analiz ve tahmin aşamaları ile sonuçlar alınmıştır. Gözlem verilerini ise Meteoroloji Genel Müdürlüğünün hazırladıkları sistemlerden hazır olarak alınmıştır. Çünkü gözlem adımı fiziksel materyaller ile yapılmakta olduğundan proje için hazır olarak almak daha mantıklı olacaktır. Meteoroloji Genel Müdürlüğünden aldığımız verilerde 01.01.2018 ile 01.01.2019 tarihleri arasındaki Kütahya ilinin 5 ilçesinde bulunan istasyonlardan günlük olarak ortalama hava durumu değerleri alınmıştır. Bu ilçeler sırasıyla Kütahya (Merkez), Emet, Simav, Gediz ve Altıntaş’tır. Bu istasyonlardan günlük olarak ortalama sıcaklık, ortalama aktüel basınç ve ortalama nem değerleri alınmıştır.Web sitesinde göz yormayan mavi tonları ile beyaz kullanılmıştır. 
+In the upper right corner of the pages for site transitions, there are Home page, About Us and Contact buttons respectively. On the main page, there is the area where the estimates of the temperature, pressure and humidity values ​​of the days from the current day to one week later. In the About Us section, the project team members have their names, surnames, photographs and duties in the project. The contact page includes the address, e-mail information and contact form of Kütahya Dumlupınar University.
 
-Site geçişleri için sayfaların sağ üst köşesinde sırasıyla Ana sayfa, Hakkımızda ve İletişim butonları bulunmaktadır. Ana sayfada mevcut günden itibaren bir hafta sonrasına kadar olan günlerin sıcaklık, basınç ve nem değerlerinin tahminlerinin bulunduğu alan yer almaktadır. Hakkımızda kısmında proje ekip üyelerinin isim, soy isim, fotoğraf ve projedeki görevleri bulunmaktadır. İletişim sayfasında ise Kütahya Dumlupınar Üniversitesinin adresi, e-mail bilgisi ve iletişim formu bulunmaktadır.
+### CONTENT
+#### WEB SITE DESIGN
 
-### İÇERİK
-#### WEB SİTESİ TASARIMI 
+This project uses HTML, CSS, Javascript, Bootstrap, ASP .Net MVC C #, LinQ, Github, SQL server and SQL Server Management Studio technologies. A simple and understandable design has been created by removing the unnecessary parts for this project in the existing Bootstrap library. After the visual parts are created on the design, the weather icons are shown in the table so that the user can understand the weather values. As Asp .NET MVC suggested, by transferring the transactions to be made between the head tags of the html code to the layout page, the ease of use of both the layout of the code and the fixed parts were emphasized. At the same time, necessary page redirects for the phone are added to the layout page and the website is provided to support the phone screens.
 
-Bu projede HTML, CSS, Javascript, Bootstrap, ASP .Net MVC C#, LinQ, Github, SQL server ve SQL Server Management Studio teknolojileri kullanılmıştır. Hazır bulunan Bootstrap kütüphanesinde bu proje için gereksiz görülen kısımları çıkartılarak sade ve anlaşılır bir tasarım oluşturulmuştur. Tasarım üzerinde görsel kısımlar oluşturulduktan sonra kullanıcının hava durumu değerlerini anlayabilmesi için hava durumu simgeleri tablo içerisinde gösterilmiştir. Asp .NET MVC’nin önerdiği üzere html kodunun head tag’leri arasında yapılacak işlemleri layout sayfasına aktararak hem kodun düzeninin hem de sabit kısımların kullanım kolaylığını ön plana çıkartılmıştır. Aynı zamanda layout sayfasına telefon için gerekli sayfa yönlendirmelerini de eklenilerek web sitesinin telefon ekranlarını da desteklemesi sağlanmıştır.
-
-#### Ana Sayfa:
+#### Home page:
 
 ![Screenshot Home Page](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Homepage.png)
 
-Kütahya şehri için bir haftalık hava durumu değerleri için günlük alanlar bulunmaktadır. Bu değerler sırasıyla ortalama sıcaklık, ortalama aktüel basınç ve ortalama nem değerleri kullanıcılara sunulmaktadır. Günlük alanlar içerisinde değerler gösterilmektedir.  Bu değerler ile internet üzerinden yapılan araştırmalarla birlikte benzer işlerin algoritma yapıları analiz edilerek ve bunun üzerinden regresyon denklemleri kullanılarak yeni bir tahmin algoritması oluşturulmuştur. Bu sayede ileriye yönelik hava durumu tahmin değerleri oluşturulmuştur. Oluşturulan veriler ile de o günün değerleri gösterilmektedir.
+There are daily areas for one week weather values ​​for the city of Kütahya. These values ​​are presented to users, respectively, average temperature, average current pressure and average humidity. Values ​​are shown in daily fields. With these values, a new estimation algorithm has been created by analyzing the algorithm structures of similar works and using regression equations. In this way, forward weather forecast values ​​are created. The values ​​created show the values ​​of that day.
 
-#### Hakkımızda:
-
-![Screenshot About Page](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/AboutPage.png)
-
-Hakkımızda kısmında projede yer alan üyelerin isim ve soy isimleri, projede yer aldığı görevleri ve resimleri görülmektedir. 
-
-#### İletişim:
+#### Contact:
 
 ![Screenshot Contact Page](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/ContactPage.png)
 
-Sonuncu sayfa olan iletişim sayfasında sol tarafta bir adet konum kısmı bulunmaktadır. Buradan Kütahya Dumlupınar Üniversitesinin konumuna erişilmektedir. Kütahya Dumlupınar Üniversitesinin tam adresi, telefon numarası ve eposta adresi gibi iletişim bilgileri de bulunmaktadır. Sağ tarafta ise kullanıcıların bizimle iletişime geçebilmeleri için bir adet form bulunmakta. Bu form sayesinde isim, e-mail, şirket, web site ve mesaj ile kullanıcılar şikayetlerini, önerilerini, sorularını veya buldukları açıklar gibi dilediklerini yazarak bize iletebilmekteler.
+On the last page, there is a location section on the left side of the communication page. From here, the location of Kütahya Dumlupınar University is accessed. Kütahya Dumlupınar University also has contact information such as full address, phone number and email address. On the right, there is a form for users to contact us. Thanks to this form, users can submit their complaints, suggestions, questions, or whatever they find, such as e-mail, company, website and message, and send them to us.
 
+### RECEIVING THE WEATHER DATA OF PAST YEARS
 
-### GEÇMİŞ YILLARIN HAVA DURUMU VERİLERİNİN ALINMASI
+In this project, it has been determined that 1 year data for 1 region must be present in order to analyze the weather data. This conclusion was made after research from the registration database is passed in the weather over the internet provinces of Turkey. The website for this project in the Republic of Turkey in the direction of research of Agriculture and Forestry Ministry data provided by the General Directorate of Meteorology is appropriate.
 
-Bu projede hava durumu verilerinin analizi yapılabilmesi için 1 bölgeye ait 1 yıllık verinin bulunması gerektiği saptanmıştır. Bu çıkarımdan sonra internet üzerinden Türkiye illerinin günlük hava durumlarının kayda geçirildiği veri tabanlarının araştırmaları yapılmıştır. Bu projedeki web sitesi için, yapılan araştırmalar doğrultusunda Türkiye Cumhuriyeti Tarım ve Orman Bakanlığı Meteoroloji Genel Müdürlüğü tarafından sağlanan veriler uygundur.
+The General Directorate of Meteorology gives these data to the users with a material response. These data are provided free of charge for university research. In this case, by applying the necessary regulation, a petition approved by the head of the Computer Engineering Department of Kütahya Dumlupınar University and a database containing the necessary data and dates for the project were requested to the General Directorate of Meteorology. This database contains daily average weather values ​​from stations located in 5 districts of Kütahya between 01.01.2018 and 01.01.2019. These districts are Kütahya (Center), Emet, Simav, Gediz and Altıntaş respectively. Average temperature, average current pressure and average humidity values ​​were taken daily from these stations.
 
-Meteoroloji Genel Müdürlüğü bu verileri kullanıcılara maddi bir karşılık ile vermektedir. Üniversite araştırmaları için bu veriler ücretsiz verilmektedir. Bu durumda gerekli yönetmeliği uygulayarak Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği bölüm başkanı tarafından onaylı bir dilekçe ile Meteoroloji Genel Müdürlüğüne proje için gerekli verileri ve tarihleri içeren veri tabanı istenmiştir. Bu veri tabanında 01.01.2018 ile 01.01.2019 tarihleri arasındaki Kütahya ilinin 5 ilçesinde bulunan istasyonlardan günlük olarak ortalama hava durumu değerleri yer almaktadır. Bu ilçeler sırasıyla Kütahya (Merkez), Emet, Simav, Gediz ve Altıntaş’tır. Bu istasyonlardan günlük olarak ortalama sıcaklık, ortalama aktüel basınç ve ortalama nem değerleri alınmıştır.
+### CREATING TABLES FOR THE DATABASE AND ADDING DATA
 
-### VERİ TABANI İÇİN TABLOLARIN OLUŞTURULMASI VE VERİLERİN EKLENİLMESİ
-
-Meteoroloji Genel Müdürlüğü’nden alınan veriler birbirinden bağımsız ve Excel tabanlı olduğu için internet tabanlı bir Tool yardımı ile SQL tabanlı ve .mdf uzantılı hale dönüştürülmüştür. Üzerinde MsSQL programı ile düzenlemeler yapılmıştır. Veri tabanı kurulmuştur.
+Since the data received from the General Directorate of Meteorology is independent and Excel-based, it has been converted to SQL-based and .mdf extension with the help of an Internet-based Tool. Arrangements were made with the MsSQL program. The database has been established.
 
 ![Screenshot DataBase1](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database0.png)
 
@@ -64,12 +56,35 @@ Meteoroloji Genel Müdürlüğü’nden alınan veriler birbirinden bağımsız 
 
 ![Screenshot DataBase3](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/Screenshots/Database2.png)
 
-### HAVA DURUMU TAHMİN ALGORİTMASI
+### WEATHER FORECAST ALGORITHM
 
-Literatür taraması yapılmıştır. Benzer projeler incelenmiştir. Çözüm metotları ve algoritmaları sınanmıştır. Başarılı olan algoritma projeye uyarlanmıştır. MsSQL üzerinden gelen veriler üzerinde algoritma test edilmiştir ve yeni oluşan veriler web sitesinde ki alana aktarılmıştır.
+Literature scanning was done. Similar projects have been examined. Solution methods and algorithms have been tested. The successful algorithm has been adapted to the project. The algorithm has been tested on the data from MsSQL and the newly created data has been transferred to the field on the website.
 
-### SONUÇLAR
+### RESULTS
 
-Hava durumu tahmini kompleks ve kapsamlı bir çalışma gerektirmektedir. Bu projede geçmiş verilerle ve çeşitli algoritmalarla yeni tahminler elde edilmiştir. Web sayfası tasarımı için Bootstrap kullanılarak oluşturulmuştur ve ihtiyaç duyulan kodlar yazılarak tasarım tamamlanmıştır.Veri tabanı tasarımı yapılırken Meteoroloji Genel Müdürlüğünün hazırladıkları sistemlerden hazır olarak alınmıştır. Bunun için Meteoroloji Genel Müdürlüğüne Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği bölüm başkanı tarafından onaylı bir dilekçe gönderilmiştir. Gelen veriler için uygun veri tabanı ve tablolar oluşturulmuştur. Veriler oluşturulan alanlara eklenmiştir. Asp.net MVC yapısına uygun olarak HomeController sınıfı oluşturulmuştur. Bu sınıf içerisinde veri tabanı bağlantısı yapılmıştır. Sağlanmış bağlantı ile hava durumu verileri olan tarih, sıcaklık, basınç ve nem gerekli sorgular ile çekilmiştir.
+Weather forecast requires a complex and comprehensive study. In this project, new estimates were obtained with historical data and various algorithms. It was created using Bootstrap for web page design, and the design was completed by writing the required codes. While the database was being designed, it was taken ready from the systems prepared by the General Directorate of Meteorology. For this, a petition was sent to the General Directorate of Meteorology by the head of the Computer Engineering department of Kütahya Dumlupınar University. Suitable databases and tables have been created for the incoming data . The data has been added to the created fields. The HomeController class has been created in accordance with the Asp.net MVC structure. Database connection has been made within this class. With the connection provided, the weather, date, temperature, pressure and humidity were taken with necessary queries.
 
-Çeşitli algoritmalar arasında regresyon analizi kullanılmıştır. Regresyon, iki (ya da daha çok) değişken arasındaki doğrusal ilişkinin fonksiyonel şeklini, biri bağımlı diğeri bağımsız değişken olarak bir doğru denklemi olarak göstermektedir ve değişkenlerden birinin değeri bilindiğinde diğeri hakkında kestirim yapılmasını sağlamaktadır. Bu sayede geçmiş hava durumu verileri ile (sıcaklık, basınç ve nem) gelecekti hava durumu değerleri tahmin edilmektedir.
+Regression analysis was used among various algorithms. Regression shows the functional form of the linear relationship between two (or more) variables, one as a dependent equation and the other as an independent variable, and provides predictions about the other when the value of one variable is known. In this way, weather values ​​(temperature, pressure and humidity) that will come with the past weather data are estimated.
+
+## Getting Started
+
+Download a copy of the project files to your local machine to run the project. Get the necessary environments. Create the database and process the necessary information. You can start using the connection between the database and the project.
+
+### Requirements
+
+- Microsoft Visual Studio
+- Microsoft SQL server
+- Microsoft SQL Server Management Studio
+
+To run the project, you must first obtain any version of the software suitable for your system from [Microsoft Visual Studio](https://visualstudio.microsoft.com/) and install it on your local machine. As a next step, create a new database by obtaining a database at [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019). Enter the necessary data into the database you have created. Then, it will be enough to introduce the project to IDE environment and perform the debug operation. During this process, you should test the connection between the database and the project and make the necessary adjustments.
+
+## Authors
+
+* **Batuhan Güneş**  - [BatuhanGunes](https://github.com/BatuhanGunes)
+
+See also the list of contributors [contributors](https://github.com/BatuhanGunes/weatherForecastApplication/graphs/contributors) who participated in this project.
+
+## License
+
+his project is licensed under the Apache License - see the [LICENSE.md](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/LICENSE) file for details.
+
