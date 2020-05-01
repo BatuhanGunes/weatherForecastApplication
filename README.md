@@ -1,6 +1,6 @@
 Language : [Turkish](https://github.com/BatuhanGunes/weatherForecastApplication/blob/master/README(Turkish).md) / English
 
-# weatherForecastApplication
+# weather Forecast Application
 
 ### SUMMARY
 
@@ -8,7 +8,9 @@ Weather forecasting is at the heart of meteorology, many young people engaged in
 
 Keywords: weather, forecast, database, algorithm, web, server.
 
+```
 Project creation date: November 2019
+```
 
 ### LOGIN
 
